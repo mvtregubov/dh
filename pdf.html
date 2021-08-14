@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Pdf viewer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <style type="text/css">
 	#book{
 			float: left;
@@ -30,19 +33,17 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 <select id="dd">
-  <option value="1.pdf">Pdf 1</option>
-  <option value="2.pdf">Pdf 2</option>
-  <option value="3.pdf">Pdf 3</option>
+  <option value="http://www.copyright.gov/legislation/dmca.pdf">Pdf 1</option>
+  <option value="http://www.pdf995.com/samples/pdf.pdf">Pdf 2</option>
+  <option value="http://www.axmag.com/download/pdfurl-guide.pdf">Pdf 3</option>
 </select> 
 <div id="book">
 	<div class="arrow">
 		<span onclick="prev()" class="glyphicon glyphicon-triangle-left" aria-hidden="true" ></span>
 	</div>
-	<iframe id="pdfFrame" src="3.pdf"  width="80%" height="100%">
+	<iframe id="pdfFrame" src="http://www.axmag.com/download/pdfurl-guide.pdf"  width="80%" height="100%">
 	  Your browser doesn't support iFrame.
 	</iframe>
 	<div class="arrow">

@@ -1,0 +1,22 @@
+<!-- <script>
+function loadImages(i){
+    i = i || 1;
+    var img = new Image();    
+    img.onload = function(){
+    	document.body.appendChild(img);
+        loadImages(++i);
+    }
+    img.src = './' +i + '.jpg';
+}
+loadImages();
+</script> -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<div class="container-fluid row g-1">
+  <script>
+      // for (var i = 1; i <= 20; ++i) { // обычный цикл
+      for (var i = 10; i--;) { // инвертированный цикл
+          document.write('<div class="col-md-1"><a href="images/' + i + '.jpg"><img class="img-fluid" src="images/' + i + '.jpg" ></a></div>');
+      }
+  </script>
+</div> 

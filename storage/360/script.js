@@ -1,4 +1,4 @@
-var img = 'https://i.imgur.com/GFLxXVV.jpg';
+var img = '1.jpg';
 // var img = 'https://texturify.com/content/10132/texturify_pano-1-12.jpg';
 
 var camera, renderer, scene,

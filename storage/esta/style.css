@@ -1,0 +1,39 @@
+html, body { height: 100%; }
+body { margin: 0; }
+img {height: 100%;width: 100%;object-fit: cover;}
+
+input {padding: 0; border: none; width: 100%; position: absolute; height: 100%; mix-blend-mode: hue; 
+    cursor: pointer;}
+
+::-webkit-color-swatch {border: none;}
+
+::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+::-moz-color-swatch,
+::-moz-focus-inner {
+    border: none;
+}
+
+::-moz-focus-inner {
+    padding: 0;
+}
+
+a {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #6B6BFF;
+    background: black;
+    display: block;
+    padding: 0 8px 3px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.wall{
+  background-image:url('esta.jpg');
+  background-repeat:no-repeat;
+  padding-left:20px;
+}

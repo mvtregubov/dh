@@ -1,4 +1,4 @@
-var img = '1.jpg';
+var img = 'https://mvtregubov.github.io/dh/storage/360/1.jpg';
 // var img = 'https://texturify.com/content/10132/texturify_pano-1-12.jpg';
 
 var camera, renderer, scene,

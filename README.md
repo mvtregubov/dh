@@ -6,6 +6,7 @@
 - [Буклеты](https://mvtregubov.github.io/dh/pdfs.html)
 - [3D архив](https://mvtregubov.github.io/dh/ris.html)
 - [Панорамы](https://mvtregubov.github.io/dh/storage/panorama/)
+- [Покраска модульного здания](https://mvtregubov.github.io/dh/storage/esta/)
 - [Презентация лого в PDF](https://mvtregubov.github.io/dh/storage/pdf/)
 
 ---

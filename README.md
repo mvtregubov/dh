@@ -1,6 +1,6 @@
 # DH Testing:
 
-- [Рассылка Instagram](https://mvtregubov.github.io/dh/storage/insta/)
+- [Рассылка Instagram](https://mvtregubov.github.io/dh/storage/instagram/)
 - [Домокомплект EURO-118 360°](https://mvtregubov.github.io/dh/storage/360/)
 - [Слайды «Современная архитектура частного домостроения»](https://mvtregubov.github.io/dh/storage/fullpage/)
 - [Меню для главного сайта](https://mvtregubov.github.io/dh/storage/menu/)

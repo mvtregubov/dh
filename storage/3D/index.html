@@ -4,10 +4,7 @@
   <meta charset="UTF-8">
   <title>3D</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-
-<link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -111,8 +108,26 @@
 </div>
 <!-- partial -->
 <script>
-const observer = lozad(); // lazy loads elements with default selector as ".lozad"
-observer.observe();
+let images = [...document.querySelectorAll('.lozad')];
+
+const interactSettings = {
+  root: document.querySelector('.center'),
+  rootMargin: '0px 0px 200px 0px' };
+
+
+function onIntersection(imageEntites) {
+  imageEntites.forEach(image => {
+    if (image.isIntersecting) {
+      observer.unobserve(image.target);
+      image.target.src = image.target.dataset.src;
+      image.target.onload = () => image.target.classList.add('loaded');
+    }
+  });
+}
+
+let observer = new IntersectionObserver(onIntersection, interactSettings);
+
+images.forEach(image => observer.observe(image));
 </script>
 
 </body>

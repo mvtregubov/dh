@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>3D архив</title>
+  <link rel='stylesheet' href='./nanogallery2.min.css'>
+
+</head>
+
+<body>
+  <div id="nanogallery2_flickr"></div>
+  <!-- partial -->
+  <script src='./jquery.min.js'></script>
+  <script src='./jquery.nanogallery2.min.js'></script>
+  <script>
+    var settings = {
+      kind: 'flickr',
+      userID: 'tregubov', // Flickr User ID
+      thumbnailHeight: 100,
+      thumbnailWidth: 100,
+      thumbnailLabel: {
+        display: false
+      },
+      locationHash: false
+    };
+
+    jQuery(document).ready(function () {
+      settings.album = '72157662585023625';
+      jQuery("#nanogallery2_flickr").nanogallery2(settings);
+    });
+  </script>
+
+</body>
+
+</html>

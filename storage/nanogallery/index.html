@@ -1,48 +1,61 @@
 <html>
-
 <head>
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-
   <script type="text/javascript" src="./jquery.min.js"></script>
-
   <link href="./nanogallery2.min.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="./jquery.nanogallery2.min.js"></script>
-
 </head>
 
 <body>
+  <div id="my_nanogallery2" data-nanogallery2></div>
 
-  <div ID="ngy2p" data-nanogallery2='{
-        "itemsBaseURL": "img/",
-        "thumbnailHeight": 150,
-        "thumbnailWidth": 200,
-        "thumbnailBorderVertical": 0,
-        "thumbnailBorderHorizontal": 0,
-        "colorScheme": {
-          "thumbnail": {
-            "background": "rgba(231,231,231,1)"
-          }
-        },
-        "thumbnailLabel": {
-          "position": "overImageOnBottom",
-          "titleMultiLine": true
-        },
-        "allowHTMLinData": true,
-        "galleryDisplayMode": "pagination",
-        "galleryMaxRows": 20,
-        "galleryPaginationMode": "numbers",
-        "thumbnailAlignment": "center",
-        "galleryFilterTags": "title",
-        "thumbnailOpenImage": true
-      }'>
+  <script>
+    $("#my_nanogallery2").nanogallery2({
+      // gallery settings
+      "itemsBaseURL": "img/",
+      "thumbnailHeight": 150,
+      "thumbnailWidth": 200,
+      "thumbnailBorderVertical": 0,
+      "thumbnailBorderHorizontal": 0,
+      "colorScheme": {
+        "thumbnail": {
+          "background": "rgba(231,231,231,1)"
+        }
+      },
+      "thumbnailLabel": {
+        "position": "overImageOnBottom",
+        "titleMultiLine": true
+      },
+      "allowHTMLinData": true,
+      "galleryDisplayMode": "pagination",
+      "galleryMaxRows": 20,
+      "galleryPaginationMode": "numbers",
+      "thumbnailAlignment": "center",
+      "galleryFilterTags": "title",
+      "thumbnailOpenImage": true,
 
+      // gallery content
+      items: [
+        // album 1
+        // album 2
+        {	src: 'image_02.jpg',                         title: 'album B',  ID: 2,  kind:'album' },
+        { src: 'image_01.jpg', srct: 'image_01ts.jpg', title: 'image B1', ID: 20, albumID: 2 },
+        { src: 'image_02.jpg', srct: 'image_02ts.jpg', title: 'image B2', ID: 21, albumID: 2 },
+        { src: 'image_03.jpg', srct: 'image_03ts.jpg', title: 'image B3', ID: 22, albumID: 2 },
+        
+        { src: 'voennyy-gorodok-1.jpg',                         title: 'album A',  ID: 1,	kind:'album' },
+        { src: 'voennyy-gorodok-1.jpg', srct: 'voennyy-gorodok-1.jpg', title: '1', ID: 10, albumID: 1 },
+        { src: 'voennyy-gorodok-2.jpg', srct: 'voennyy-gorodok-2.jpg', title: '2', ID: 11, albumID: 1 },
+        { src: 'voennyy-gorodok-3.jpg', srct: 'voennyy-gorodok-3.jpg', title: '3', ID: 12, albumID: 1 },
+        { src: 'voennyy-gorodok-4.jpg', srct: 'voennyy-gorodok-4.jpg', title: '4', ID: 13, albumID: 1 },
+        { src: 'voennyy-gorodok-5.jpg', srct: 'voennyy-gorodok-5.jpg', title: '5', ID: 14, albumID: 1 }
+        
 
+      ]
+    });
+  </script>
 
-
-
-
-
-
+  <!-- 
 
 
     <a href="" data-ngkind="album" data-ngid="5" data-ngthumb="ahtyubinsk.jpg">Ахтюбинск, Севастополь</a>
@@ -72,14 +85,15 @@
     <a href="observator-3.jpg" data-ngid="22" data-ngalbumid="2" data-ngthumb="observator-3.jpg">3</a>
 
 
-    <a href="" data-ngkind="album" data-ngid="1" data-ngthumb="voennyy-gorodok-1.jpg">Военно-учебный центр - 2019</a>
+    <a href="" data-ngkind="album" data-ngid="1" data-ngthumb="voennyy-gorodok-1.jpg">Военно-учебный центр ` 2019</a>
     <a href="voennyy-gorodok-1.jpg" data-ngid="10" data-ngalbumid="1" data-ngthumb="voennyy-gorodok-1.jpg">1</a>
     <a href="voennyy-gorodok-2.jpg" data-ngid="11" data-ngalbumid="1" data-ngthumb="voennyy-gorodok-2.jpg">2</a>
     <a href="voennyy-gorodok-3.jpg" data-ngid="12" data-ngalbumid="1" data-ngthumb="voennyy-gorodok-3.jpg">3</a>
     <a href="voennyy-gorodok-4.jpg" data-ngid="13" data-ngalbumid="1" data-ngthumb="voennyy-gorodok-4.jpg">4</a>
-    <a href="voennyy-gorodok-5.jpg" data-ngid="14" data-ngalbumid="1" data-ngthumb="voennyy-gorodok-5.jpg">5</a>
+    <a href="voennyy-gorodok-5.jpg" data-ngid="14" data-ngalbumid="1" data-ngthumb="voennyy-gorodok-5.jpg">5</a> -->
 
   </div>
 
 </body>
+
 </html>

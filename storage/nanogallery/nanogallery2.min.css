@@ -1,6 +1,6 @@
 /* nanogallery2 - v3.0.5 - 2021-01-06 */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
-body {font-family: 'Ubuntu Condensed', sans-serif;}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+body {font-family: 'Oswald', sans-serif;}
 .nGY2 {
     box-sizing: content-box;
     -webkit-box-sizing: content-box;

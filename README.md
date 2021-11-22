@@ -5,7 +5,7 @@
 - [Слайды «Современная архитектура частного домостроения»](https://mvtregubov.github.io/dh/storage/fullpage/)
 - [Меню для главного сайта](https://mvtregubov.github.io/dh/storage/menu/)
 - [Буклеты](https://mvtregubov.github.io/dh/pdfs.html)
-- [3D архив](https://mvtregubov.github.io/dh/storage/flickr/)
+- [3D архив](https://mvtregubov.github.io/dh/storage/nanogallery/)
 - [Панорамы](https://mvtregubov.github.io/dh/storage/panorama/)
 - [Галерея](https://mvtregubov.github.io/dh/storage/3D/)
 - [Покраска модульного здания](https://mvtregubov.github.io/dh/storage/esta/)

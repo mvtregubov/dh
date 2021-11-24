@@ -1,0 +1,248 @@
+<html>
+<head>
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+  <script type="text/javascript" src="./jquery.min.js"></script>
+  <link href="./nanogallery2.min.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="./jquery.nanogallery2.min.js"></script>
+  <style>
+  .nanogallery_gallerytheme_custom_my_nanogallery2 .nGY2GThumbnailAlbumTitle, .nanogallery_gallerytheme_custom_my_nanogallery2 .nGY2GThumbnailImageTitle {
+      color: #999 !important;
+      background-color: transparent;
+  }
+  </style>
+</head>
+
+<body>
+  <div id="my_nanogallery2" data-nanogallery2></div>
+
+  <script>
+    $("#my_nanogallery2").nanogallery2({
+      // gallery settings
+      "itemsBaseURL": "img/",
+      "thumbnailHeight": 150,
+      "thumbnailWidth": 220,
+      "thumbnailBorderVertical": 0,
+      "thumbnailBorderHorizontal": 0,
+      "colorScheme": {
+        "thumbnail": {
+          "background": "rgba(255,255,255,1)"
+        }
+      },
+      "thumbnailLabel": {
+        //"position": "overImageOnBottom",
+        "position": "onBottom",
+        "titleMultiLine": true
+      },
+      "allowHTMLinData": true,
+      "galleryDisplayMode": "pagination",
+      "galleryMaxRows": 20,
+      "galleryPaginationMode": "numbers",
+      "thumbnailAlignment": "center",
+      "galleryFilterTags": "title",
+      "thumbnailOpenImage": true,
+
+      // gallery content
+      items: [
+/*
+        {	src: 'XXX.jpg',                         title: 'XXX',  ID: XXX,  kind:'album' },
+        { src: 'XXX.jpg', srct: 'XXX.jpg', title: '1', ID: 0, albumID: XXX },
+        { src: 'XXX.jpg', srct: 'XXX.jpg', title: '2', ID: 1, albumID: XXX },
+        { src: 'XXX.jpg', srct: 'XXX.jpg', title: '3', ID: 2, albumID: XXX },
+        { src: 'XXX.jpg', srct: 'XXX.jpg', title: '4', ID: 3, albumID: XXX },
+        { src: 'XXX.jpg', srct: 'XXX.jpg', title: '5', ID: 4, albumID: XXX },
+        { src: 'XXX.jpg', srct: 'XXX.jpg', title: '6', ID: 5, albumID: XXX },
+        { src: 'XXX.jpg', srct: 'XXX.jpg', title: '7', ID: 6, albumID: XXX },
+        { src: 'XXX.jpg', srct: 'XXX.jpg', title: '8', ID: 7, albumID: XXX },
+        { src: 'XXX.jpg', srct: 'XXX.jpg', title: '9', ID: 8, albumID: XXX },
+        { src: 'XXX.jpg', srct: 'XXX.jpg', title: '10', ID: 9, albumID: XXX },
+*/
+
+        {	src: 'сhildren-dining-1.jpg',                         title: 'Детская столовая `20',  ID: 900,  kind:'album' },
+        { src: 'сhildren-dining-1.jpg', srct: 'сhildren-dining-1.jpg', title: '1', ID: 9000, albumID: 900 },
+        { src: 'сhildren-dining-2.jpg', srct: 'сhildren-dining-2.jpg', title: '2', ID: 9001, albumID: 900 },
+        { src: 'сhildren-dining-3.jpg', srct: 'сhildren-dining-3.jpg', title: '3', ID: 9002, albumID: 900 },
+        { src: 'сhildren-dining-4.jpg', srct: 'сhildren-dining-4.jpg', title: '4', ID: 9003, albumID: 900 },
+
+        {	src: 'case-light-1.jpg',                         title: 'Обшивка ЛАЙТ',  ID: 600,  kind:'album' },
+        { src: 'case-light-1.jpg', srct: 'case-light-1.jpg', title: '1', ID: 6000, albumID: 600 },
+        { src: 'case-light-2.jpg', srct: 'case-light-2.jpg', title: '2', ID: 6001, albumID: 600 },
+        { src: 'case-light-3.jpg', srct: 'case-light-3.jpg', title: '3', ID: 6002, albumID: 600 },
+        { src: 'case-light-4.jpg', srct: 'case-light-4.jpg', title: '4', ID: 6003, albumID: 600 },
+        { src: 'case-light-5.jpg', srct: 'case-light-5.jpg', title: '5', ID: 6004, albumID: 600 },
+
+        {	src: 'posters-house-1.jpg',                         title: 'Концепция постеров `21',  ID: 500,  kind:'album' },
+        { src: 'posters-house-1.jpg', srct: 'posters-house-1.jpg', title: '1', ID: 5000, albumID: 500 },
+
+        {	src: 'sportkompleks.jpg',                         title: 'Спорткомплекс `21',  ID: 400,  kind:'album' },
+        { src: 'sportkompleks.jpg', srct: 'sportkompleks.jpg', title: '1', ID: 4000, albumID: 400 },
+        
+        {	src: 'carcass-1.jpg',                         title: 'Каркас ЛАЙТ `21',  ID: 300,  kind:'album' },
+        { src: 'carcass-1.jpg', srct: 'carcass-1.jpg', title: '1', ID: 3000, albumID: 300 },
+        { src: 'carcass-2.jpg', srct: 'carcass-2.jpg', title: '2', ID: 3001, albumID: 300 },
+        { src: 'carcass-3.jpg', srct: 'carcass-3.jpg', title: '3', ID: 3002, albumID: 300 },
+
+        {	src: 'houses-exteriors-118_1.jpg',                         title: 'Экстерьер ЛАЙТ `21',  ID: 200,  kind:'album' },
+        { src: 'houses-exteriors-44_1.jpg', srct: 'houses-exteriors-44_1.jpg', title: 'Лайт 44', ID: 2000, albumID: 200 },
+        { src: 'houses-exteriors-59_1.jpg', srct: 'houses-exteriors-59_1.jpg', title: 'Лайт 59', ID: 2001, albumID: 200 },
+        { src: 'houses-exteriors-88_1.jpg', srct: 'houses-exteriors-88_1.jpg', title: 'Лайт 88', ID: 2002, albumID: 200 },
+        { src: 'houses-exteriors-118_1.jpg', srct: 'houses-exteriors-118_1.jpg', title: 'Лайт 118', ID: 2003, albumID: 200 },
+        { src: 'houses-exteriors-44_2.jpg', srct: 'houses-exteriors-44_2.jpg', title: 'Лайт 44', ID: 2004, albumID: 200 },
+        { src: 'houses-exteriors-59_2.jpg', srct: 'houses-exteriors-59_2.jpg', title: 'Лайт 59', ID: 2005, albumID: 200 },
+        { src: 'houses-exteriors-88_2.jpg', srct: 'houses-exteriors-88_2.jpg', title: 'Лайт 88', ID: 2006, albumID: 200 },
+        { src: 'houses-exteriors-118_2.jpg', srct: 'houses-exteriors-118_2.jpg', title: 'Лайт 118', ID: 2007, albumID: 200 },
+
+        {	src: 'ofis-118-2-etazh-1.jpg',                         title: 'Офис ЕВРО 118',  ID: 100,  kind:'album' },
+        { src: 'ofis-118-2-etazh-1.jpg', srct: 'ofis-118-2-etazh-1.jpg', title: '1', ID: 1000, albumID: 100 },
+        { src: 'ofis-118-2-etazh-2.jpg', srct: 'ofis-118-2-etazh-2.jpg', title: '2', ID: 1001, albumID: 100 },
+        { src: 'ofis-118-2-etazh-3.jpg', srct: 'ofis-118-2-etazh-3.jpg', title: '3', ID: 1002, albumID: 100 },
+        { src: 'ofis-118-2-etazh-4.jpg', srct: 'ofis-118-2-etazh-4.jpg', title: '4', ID: 1003, albumID: 100 },
+        { src: 'ofis-118-2-etazh-5.jpg', srct: 'ofis-118-2-etazh-5.jpg', title: '5', ID: 1004, albumID: 100 },
+        { src: 'ofis-118-2-etazh-6.jpg', srct: 'ofis-118-2-etazh-6.jpg', title: '5', ID: 1005, albumID: 100 },
+
+        {	src: 'ofis-236-1-etazh-1.jpg',                         title: 'Офис ЕВРО 236',  ID: 9,  kind:'album' },
+        { src: 'ofis-236-1-etazh-1.jpg', srct: 'ofis-236-1-etazh-1.jpg', title: '1 этаж, дерево', ID: 90, albumID: 9 },
+        { src: 'ofis-236-1-etazh-2.jpg', srct: 'ofis-236-1-etazh-2.jpg', title: '1 этаж, стекло', ID: 91, albumID: 9 },
+        { src: 'ofis-236-1-etazh-3.jpg', srct: 'ofis-236-1-etazh-3.jpg', title: '1 этаж, стекло', ID: 92, albumID: 9 },
+        { src: 'ofis-236-1-etazh-4.jpg', srct: 'ofis-236-1-etazh-4.jpg', title: '1 этаж, стекло', ID: 93, albumID: 9 },
+        { src: 'ofis-236-1-etazh-5.jpg', srct: 'ofis-236-1-etazh-5.jpg', title: '1 этаж, стекло', ID: 94, albumID: 9 },
+        { src: 'ofis-236-2-etazh-1.jpg', srct: 'ofis-236-2-etazh-1.jpg', title: '1 этаж, стекло', ID: 95, albumID: 9 },
+        { src: 'ofis-236-2-etazh-2.jpg', srct: 'ofis-236-2-etazh-2.jpg', title: '1 этаж, стекло', ID: 96, albumID: 9 },
+        { src: 'ofis-236-2-etazh-3.jpg', srct: 'ofis-236-2-etazh-3.jpg', title: '1 этаж, стекло', ID: 97, albumID: 9 },
+        { src: 'ofis-236-2-etazh-4.jpg', srct: 'ofis-236-2-etazh-4.jpg', title: '1 этаж, дерево', ID: 98, albumID: 9 },
+        { src: 'ofis-236-2-etazh-5.jpg', srct: 'ofis-236-2-etazh-5.jpg', title: '1 этаж, икеа', ID: 99, albumID: 9 },
+
+        {	src: 'kalendar-vechnyy-1.jpg',                         title: 'Вечный календарь `21',  ID: 8,  kind:'album' },
+        { src: 'kalendar-vechnyy-1.jpg', srct: 'kalendar-vechnyy-1.jpg', title: '1', ID: 80, albumID: 8 },
+        { src: 'kalendar-vechnyy-2.jpg', srct: 'kalendar-vechnyy-2.jpg', title: '2', ID: 81, albumID: 8 },
+        { src: 'kalendar-vechnyy-3.jpg', srct: 'kalendar-vechnyy-3.jpg', title: '3', ID: 82, albumID: 8 },
+        { src: 'kalendar-vechnyy-4.jpg', srct: 'kalendar-vechnyy-4.jpg', title: '4', ID: 83, albumID: 8 },
+        { src: 'kalendar-vechnyy-5.jpg', srct: 'kalendar-vechnyy-5.jpg', title: '5', ID: 84, albumID: 8 },
+        { src: 'kalendar-vechnyy-6.jpg', srct: 'kalendar-vechnyy-6.jpg', title: '6', ID: 85, albumID: 8 },
+
+        {	src: 'christmas-toys-1.jpg',                         title: 'Елочные игрушки подарочные `21',  ID: 7,  kind:'album' },
+        { src: 'christmas-toys-1.jpg', srct: 'christmas-toys-1.jpg', title: '1', ID: 70, albumID: 7 },
+        { src: 'christmas-toys-2.jpg', srct: 'christmas-toys-2.jpg', title: '2', ID: 71, albumID: 7 },
+        { src: 'christmas-toys-3.jpg', srct: 'christmas-toys-3.jpg', title: '3', ID: 72, albumID: 7 },
+        { src: 'christmas-toys-4.jpg', srct: 'christmas-toys-4.jpg', title: '4', ID: 73, albumID: 7 },
+
+        {	src: 'korobkak-1.jpg',                         title: 'Коробка для документации `21',  ID: 6,  kind:'album' },
+        { src: 'korobkak-1.jpg', srct: 'korobkak-1.jpg', title: '1', ID: 60, albumID: 6 },
+        { src: 'korobkak-2.jpg', srct: 'korobkak-2.jpg', title: '2', ID: 61, albumID: 6 },
+        { src: 'korobkak-3.jpg', srct: 'korobkak-3.jpg', title: '3', ID: 62, albumID: 6 },
+        { src: 'korobkak-4.jpg', srct: 'korobkak-4.jpg', title: '4', ID: 63, albumID: 6 },
+        { src: 'korobkak-5.jpg', srct: 'korobkak-5.jpg', title: '5', ID: 64, albumID: 6 },
+        { src: 'korobkak-6.jpg', srct: 'korobkak-6.jpg', title: '6', ID: 65, albumID: 6 },
+        { src: 'korobkak-7.jpg', srct: 'korobkak-7.jpg', title: '7', ID: 66, albumID: 6 },
+        { src: 'korobkak-8.jpg', srct: 'korobkak-8.jpg', title: '8', ID: 67, albumID: 6 },
+        { src: 'korobkak-9.jpg', srct: 'korobkak-9.jpg', title: '9', ID: 68, albumID: 6 },
+
+        {	src: 'papkak-14.jpg',                         title: 'Папка картонные, кожзам `21',  ID: 5,  kind:'album' },
+        { src: 'papkak-1.jpg', srct: 'papkak-1.jpg', title: '1', ID: 50, albumID: 5 },
+        { src: 'papkak-2.jpg', srct: 'papkak-2.jpg', title: '2', ID: 51, albumID: 5 },
+        { src: 'papkak-3.jpg', srct: 'papkak-3.jpg', title: '3', ID: 52, albumID: 5 },
+        { src: 'papkak-4.jpg', srct: 'papkak-4.jpg', title: '4', ID: 53, albumID: 5 },
+        { src: 'papkak-5.jpg', srct: 'papkak-5.jpg', title: '5', ID: 54, albumID: 5 },
+        { src: 'papkak-6.jpg', srct: 'papkak-6.jpg', title: '6', ID: 55, albumID: 5 },
+        { src: 'papkak-7.jpg', srct: 'papkak-7.jpg', title: '7', ID: 56, albumID: 5 },
+        { src: 'papkak-8.jpg', srct: 'papkak-8.jpg', title: '8', ID: 57, albumID: 5 },
+        { src: 'papkak-9.jpg', srct: 'papkak-9.jpg', title: '9', ID: 58, albumID: 5 },
+        { src: 'papkak-10.jpg', srct: 'papkak-10.jpg', title: '10', ID: 59, albumID: 5 },
+        { src: 'papkak-11.jpg', srct: 'papkak-11.jpg', title: '11', ID: 60, albumID: 5 },
+        { src: 'papkak-12.jpg', srct: 'papkak-12.jpg', title: '12', ID: 61, albumID: 5 },
+        { src: 'papkak-13.jpg', srct: 'papkak-13.jpg', title: '13', ID: 62, albumID: 5 },
+        { src: 'papkak-14.jpg', srct: 'papkak-14.jpg', title: '14', ID: 63, albumID: 5 },
+
+        {	src: 'fie-1.jpg',                         title: 'Дом ФИЭ `21',  ID: 4,  kind:'album' },
+        { src: 'fie-1.jpg', srct: 'fie-1.jpg', title: '1', ID: 40, albumID: 4 },
+        { src: 'fie-2.jpg', srct: 'fie-2.jpg', title: '2', ID: 41, albumID: 4 },
+        { src: 'fie-3.jpg', srct: 'fie-3.jpg', title: '3', ID: 42, albumID: 4 },
+        { src: 'fie-4.jpg', srct: 'fie-4.jpg', title: '4', ID: 43, albumID: 4 },
+        { src: 'fie-5.jpg', srct: 'fie-5.jpg', title: '5', ID: 44, albumID: 4 },
+        { src: 'fie-6.jpg', srct: 'fie-6.jpg', title: '6', ID: 45, albumID: 4 },
+        { src: 'fie-7.jpg', srct: 'fie-7.jpg', title: '7', ID: 46, albumID: 4 },
+        { src: 'fie-8.jpg', srct: 'fie-8.jpg', title: '8', ID: 47, albumID: 4 },
+
+        {	src: 'barnhouse-1.jpg',                         title: 'Барнхаус `21',  ID: 700,  kind:'album' },
+        { src: 'barnhouse-1.jpg', srct: 'barnhouse-1.jpg', title: '1', ID: 7000, albumID: 700 },
+        { src: 'barnhouse-2.jpg', srct: 'barnhouse-2.jpg', title: '2', ID: 7001, albumID: 700 },
+        { src: 'barnhouse-3.jpg', srct: 'barnhouse-3.jpg', title: '3', ID: 7002, albumID: 700 },
+        { src: 'barnhouse-4.jpg', srct: 'barnhouse-4.jpg', title: '4', ID: 7003, albumID: 700 },
+        { src: 'barnhouse-5.jpg', srct: 'barnhouse-5.jpg', title: '5', ID: 7004, albumID: 700 },
+        { src: 'barnhouse-6.jpg', srct: 'barnhouse-6.jpg', title: '6', ID: 7005, albumID: 700 },
+        { src: 'barnhouse-7.jpg', srct: 'barnhouse-7.jpg', title: '7', ID: 7006, albumID: 700 },
+        { src: 'barnhouse-8.jpg', srct: 'barnhouse-8.jpg', title: '8', ID: 7007, albumID: 700 },
+        { src: 'barnhouse-9.jpg', srct: 'barnhouse-9.jpg', title: '9', ID: 7008, albumID: 700 },
+        { src: 'barnhouse-10.jpg', srct: 'barnhouse-10.jpg', title: '10', ID: 7009, albumID: 700 },
+        { src: 'barnhouse-11.jpg', srct: 'barnhouse-11.jpg', title: '11', ID: 7010, albumID: 700 },
+        { src: 'barnhouse-12.jpg', srct: 'barnhouse-12.jpg', title: '12', ID: 7011, albumID: 700 },
+        { src: 'barnhouse-13.jpg', srct: 'barnhouse-13.jpg', title: '13', ID: 7012, albumID: 700 },
+
+        {	src: 'townhouse-1.jpg',                         title: 'Таунхаус `20',  ID: 800,  kind:'album' },
+        { src: 'townhouse-1.jpg', srct: 'townhouse-1.jpg', title: '1', ID: 8000, albumID: 800 },
+        { src: 'townhouse-2.jpg', srct: 'townhouse-2.jpg', title: '2', ID: 8001, albumID: 800 },
+        { src: 'townhouse-3.jpg', srct: 'townhouse-3.jpg', title: '3', ID: 8002, albumID: 800 },
+        { src: 'townhouse-4.jpg', srct: 'townhouse-4.jpg', title: '4', ID: 8003, albumID: 800 },
+        { src: 'townhouse-5.jpg', srct: 'townhouse-5.jpg', title: '5', ID: 8004, albumID: 800 },
+        { src: 'townhouse-6.jpg', srct: 'townhouse-6.jpg', title: '6', ID: 8005, albumID: 800 },
+        { src: 'townhouse-7.jpg', srct: 'townhouse-7.jpg', title: '7', ID: 8006, albumID: 800 },
+        { src: 'townhouse-8.jpg', srct: 'townhouse-8.jpg', title: '8', ID: 8007, albumID: 800 },
+        { src: 'townhouse-9.jpg', srct: 'townhouse-9.jpg', title: '9', ID: 8008, albumID: 800 },
+        { src: 'townhouse-10.jpg', srct: 'townhouse-10.jpg', title: '10', ID: 8009, albumID: 800 },
+        { src: 'townhouse-11.jpg', srct: 'townhouse-11.jpg', title: '11', ID: 8010, albumID: 800 },
+        { src: 'townhouse-12.jpg', srct: 'townhouse-12.jpg', title: '12', ID: 8011, albumID: 800 },
+        { src: 'townhouse-13.jpg', srct: 'townhouse-13.jpg', title: '13', ID: 8012, albumID: 800 },
+        { src: 'townhouse-14.jpg', srct: 'townhouse-14.jpg', title: '14', ID: 8013, albumID: 800 },
+        { src: 'townhouse-15.jpg', srct: 'townhouse-15.jpg', title: '15', ID: 8014, albumID: 800 },
+        { src: 'townhouse-16.jpg', srct: 'townhouse-16.jpg', title: '31', ID: 8015, albumID: 800 },
+        { src: 'townhouse-17.jpg', srct: 'townhouse-17.jpg', title: '16', ID: 8016, albumID: 800 },
+        { src: 'townhouse-18.jpg', srct: 'townhouse-18.jpg', title: '17', ID: 8017, albumID: 800 },
+        { src: 'townhouse-19.jpg', srct: 'townhouse-19.jpg', title: '18', ID: 8018, albumID: 800 },
+        { src: 'townhouse-20.jpg', srct: 'townhouse-20.jpg', title: '19', ID: 8019, albumID: 800 },
+        { src: 'townhouse-21.jpg', srct: 'townhouse-21.jpg', title: '20', ID: 8020, albumID: 800 },
+        { src: 'townhouse-22.jpg', srct: 'townhouse-22.jpg', title: '21', ID: 8021, albumID: 800 },
+        { src: 'townhouse-23.jpg', srct: 'townhouse-23.jpg', title: '22', ID: 8022, albumID: 800 },
+        { src: 'townhouse-24.jpg', srct: 'townhouse-24.jpg', title: '23', ID: 8023, albumID: 800 },
+        { src: 'townhouse-25.jpg', srct: 'townhouse-25.jpg', title: '24', ID: 8024, albumID: 800 },
+        { src: 'townhouse-26.jpg', srct: 'townhouse-26.jpg', title: '25', ID: 8025, albumID: 800 },
+        { src: 'townhouse-27.jpg', srct: 'townhouse-27.jpg', title: '26', ID: 8026, albumID: 800 },
+        { src: 'townhouse-28.jpg', srct: 'townhouse-28.jpg', title: '27', ID: 8027, albumID: 800 },
+        { src: 'townhouse-29.jpg', srct: 'townhouse-29.jpg', title: '28', ID: 8028, albumID: 800 },
+        { src: 'townhouse-30.jpg', srct: 'townhouse-30.jpg', title: '29', ID: 8029, albumID: 800 },
+        { src: 'townhouse-31.jpg', srct: 'townhouse-31.jpg', title: '30', ID: 8030, albumID: 800 },
+        { src: 'townhouse-32.jpg', srct: 'townhouse-32.jpg', title: '32', ID: 8031, albumID: 800 },
+        { src: 'townhouse-33.jpg', srct: 'townhouse-33.jpg', title: '33', ID: 8032, albumID: 800 },
+        { src: 'townhouse-34.jpg', srct: 'townhouse-34.jpg', title: '34', ID: 8033, albumID: 800 },
+
+        {	src: 'observator-1.jpg',                         title: 'Обсерватор `19',  ID: 3,  kind:'album' },
+        { src: 'observator-1.jpg', srct: 'observator-1.jpg', title: '1', ID: 30, albumID: 3 },
+        { src: 'observator-2.jpg', srct: 'observator-2.jpg', title: '2', ID: 31, albumID: 3 },
+        { src: 'observator-3.jpg', srct: 'observator-3.jpg', title: '3', ID: 32, albumID: 3 },
+
+        {	src: 'ahtyubinsk.jpg',                         title: 'Ахтюбинск, Севастополь `19',  ID: 2,  kind:'album' },
+        { src: 'ahtyubinsk.jpg', srct: 'ahtyubinsk.jpg', title: '1', ID: 20, albumID: 2 },
+        { src: 'ahtyubinsk-2.jpg', srct: 'ahtyubinsk-2.jpg', title: '1', ID: 21, albumID: 2 },
+        { src: 'ahtyubinsk-3.jpg', srct: 'ahtyubinsk-3.jpg', title: '2', ID: 22, albumID: 2 },
+        { src: 'ahtyubinsk-4.jpg', srct: 'ahtyubinsk-4.jpg', title: '3', ID: 23, albumID: 2 },
+        { src: 'ahtyubinsk-5.jpg', srct: 'ahtyubinsk-5.jpg', title: '4', ID: 24, albumID: 2 },
+        { src: 'ahtyubinsk-6.jpg', srct: 'ahtyubinsk-6.jpg', title: '5', ID: 25, albumID: 2 },
+        { src: 'ahtyubinsk-7.jpg', srct: 'ahtyubinsk-7.jpg', title: '6', ID: 26, albumID: 2 },
+        
+        { src: 'voennyy-gorodok-1.jpg',                         title: 'Военно-учебный центр `19',  ID: 1,	kind:'album' },
+        { src: 'voennyy-gorodok-1.jpg', srct: 'voennyy-gorodok-1.jpg', title: '1', ID: 10, albumID: 1 },
+        { src: 'voennyy-gorodok-2.jpg', srct: 'voennyy-gorodok-2.jpg', title: '2', ID: 11, albumID: 1 },
+        { src: 'voennyy-gorodok-3.jpg', srct: 'voennyy-gorodok-3.jpg', title: '3', ID: 12, albumID: 1 },
+        { src: 'voennyy-gorodok-4.jpg', srct: 'voennyy-gorodok-4.jpg', title: '4', ID: 13, albumID: 1 },
+        { src: 'voennyy-gorodok-5.jpg', srct: 'voennyy-gorodok-5.jpg', title: '5', ID: 14, albumID: 1 },
+        
+        { src: 'surgery-1.jpg',                         title: 'Военно-учебный центр `19',  ID: 01,	kind:'album' },
+        { src: 'surgery-1.jpg', srct: 'surgery-1.jpg', title: '1', ID: 0100, albumID: 01 },
+        { src: 'surgery-2.jpg', srct: 'surgery-2.jpg', title: '2', ID: 0101, albumID: 01 },
+        { src: 'surgery-3.jpg', srct: 'surgery-3.jpg', title: '3', ID: 0102, albumID: 01 },
+        { src: 'surgery-4.jpg', srct: 'surgery-4.jpg', title: '4', ID: 0103, albumID: 01 },
+      ]
+    });
+  </script>
+</div>
+
+</body>
+</html>
